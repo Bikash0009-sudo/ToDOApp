@@ -1,0 +1,108 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  
+  background-color: #7f668a;
+background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.app {
+  padding: 30px;
+}
+
+
+
+.note-area {
+  width: 400px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #7f668a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.note-area input,
+.note-area textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+
+.note-area textarea {
+  min-height: 80px;
+}
+
+
+.note-area button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #ffcc00;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.note-area button:hover {
+  background-color: #e6b800;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+
+
+.note {
+  background: #7f668a;
+  width: 250px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.note h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.note p {
+  font-size: 14px;
+  color: black;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
